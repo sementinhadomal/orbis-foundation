@@ -1,16 +1,17 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/help/bernid-gaza(/.*)?", "dest": "/help/bernid-gaza/index.html" },
-    { "src": "/help/chico-tumor(/.*)?", "dest": "/help/chico-tumor/index.html" },
-    { "src": "/help/contact(/.*)?", "dest": "/help/contact/index.html" },
-    { "src": "/help/family-home(/.*)?", "dest": "/help/family-home/index.html" },
-    { "src": "/help/gael-surgery(/.*)?", "dest": "/help/gael-surgery/index.html" },
-    { "src": "/help/maria-alice(/.*)?", "dest": "/help/maria-alice/index.html" },
-    { "src": "/help/not-found(/.*)?", "dest": "/help/not-found/index.html" },
-    { "src": "/help/reforma-da-casa-do-lorenzo(/.*)?", "dest": "/help/reforma-da-casa-do-lorenzo/index.html" },
-    { "src": "/help/rescued-horse-surgery(/.*)?", "dest": "/help/rescued-horse-surgery/index.html" },
-    { "src": "/help/ross(/.*)?", "dest": "/help/ross/index.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/help/bernid-gaza/:match*", "destination": "/help/bernid-gaza/index.html" },
+    { "source": "/help/chico-tumor/:match*", "destination": "/help/chico-tumor/index.html" },
+    { "source": "/help/contact/:match*", "destination": "/help/contact/index.html" },
+    { "source": "/help/family-home/:match*", "destination": "/help/family-home/index.html" },
+    { "source": "/help/gael-surgery/:match*", "destination": "/help/gael-surgery/index.html" },
+    { "source": "/help/maria-alice/:match*", "destination": "/help/maria-alice/index.html" },
+    { "source": "/help/not-found/:match*", "destination": "/help/not-found/index.html" },
+    { "source": "/help/reforma-da-casa-do-lorenzo/:match*", "destination": "/help/reforma-da-casa-do-lorenzo/index.html" },
+    { "source": "/help/rescued-horse-surgery/:match*", "destination": "/help/rescued-horse-surgery/index.html" },
+    { "source": "/help/ross/:match*", "destination": "/help/ross/index.html" },
+    { "source": "/((?!assets|images|fonts|favicon\\.svg|robots\\.txt).*)", "destination": "/index.html" }
   ]
 }
